@@ -1,5 +1,7 @@
 # 2022G2PST
 
+This is the task website. The task GitHub repo is at [https://github.com/sigmorphon/2022G2PST](https://github.com/sigmorphon/2022G2PST).
+
 # Task 1: Third SIGMORPHON Shared Task on Grapheme-to-Phoneme Conversion (Low-Resource and Cross-Lingual)
 
 In this task, participants will create computational models that map a sequence
@@ -41,11 +43,11 @@ Data for all three subtasks will be released promptly and announced in the Googl
 
 **Update April 9th:**
 
-Data is available in [`data`](tree/main/data). 
-* [`target_to_transfer_languages.json`](data/target_to_transfer_languages.json): map a target language to its corresponding transfer language
-* [`target_languages`](data/target_languages): Target language data
-* [`transfer_languages`](data/transfer_languages): Transfer language data
-* [`morphological`](data/morphological): Morphological information
+Data is available in [`data`](https://github.com/sigmorphon/2022G2PST/tree/main/data). 
+* `target_to_transfer_languages.json`: map a target language to its corresponding transfer language
+* `target_languages`: Target language data
+* `transfer_languages`: Transfer language data
+* `morphological`: Morphological information
 
 
 ### Subtasks
