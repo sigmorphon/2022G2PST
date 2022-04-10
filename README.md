@@ -39,6 +39,15 @@ containing grapheme sequences.
 
 Data for all three subtasks will be released promptly and announced in the Google Group.
 
+**Update April 9th:**
+
+Data is available in [`data`](data). 
+* [`target_to_transfer_languages.json`](data/target_to_transfer_languages.json): map a target language to its corresponding transfer language
+* [`target_languages`](data/target_languages): Target language data
+* [`transfer_languages`](data/transfer_languages): Transfer language data
+* [`morphological`](data/morphological): Morphological information
+
+
 ### Subtasks
 
 There are three subtasks, which will be scored separately. Participant teams may
