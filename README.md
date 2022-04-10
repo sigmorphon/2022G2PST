@@ -1,5 +1,4 @@
 # 2022G2PST
-Repository for the 2022 G2P Shared Task
 
 # Task 1: Third SIGMORPHON Shared Task on Grapheme-to-Phoneme Conversion (Low-Resource and Cross-Lingual)
 
@@ -126,8 +125,7 @@ Wiktionary itself.
 
 Lucas F.E. Ashby, Travis M. Bartley, Simon Clematide, Luca Del Signore, Cameron Gibson, Kyle Gorman, Yeonju Lee-Sikka, Peter Makarov, Aidan Malanoski, Sean Miller, Omar Ortiz, Reuben Raff, Arundhati Sengupta, Bora Seo, Yulia Spektor, and Winnie Yan. 2021. [Results of the Second SIGMORPHON Shared Task on Multilingual Grapheme-to-Phoneme Conversion](https://aclanthology.org/2021.sigmorphon-1.13/). In *Proceedings of the 18th SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and Morphology*, pages 115–125.
 
-Gorman, K., Ashby, L. F.E., Goyzueta, A., McCarthy, A. D., Wu, S., and You, D.
-2020. [The SIGMORPHON 2020 shared task on multilingual grapheme-to-phoneme
+Gorman, K., Ashby, L. F.E., Goyzueta, A., McCarthy, A. D., Wu, S., and You, D. 2020. [The SIGMORPHON 2020 shared task on multilingual grapheme-to-phoneme
 conversion](https://www.aclweb.org/anthology/2020.sigmorphon-1.2/). In *17th
 SIGMORPHON Workshop on Computational Research in Phonetics, Phonology, and
 Morphology*, pages 40-50.
