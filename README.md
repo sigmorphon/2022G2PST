@@ -1,6 +1,6 @@
 # 2022G2PST
 
-This is the task website. The task GitHub repo is at [https://github.com/sigmorphon/2022G2PST](https://github.com/sigmorphon/2022G2PST).
+The task website is at [https://sigmorphon.github.io/2022G2PST](https://sigmorphon.github.io/2022G2PST/) and GitHub repo is at [https://github.com/sigmorphon/2022G2PST](https://github.com/sigmorphon/2022G2PST).
 
 # Task 1: Third SIGMORPHON Shared Task on Grapheme-to-Phoneme Conversion (Low-Resource and Cross-Lingual)
 
