@@ -45,8 +45,12 @@ Data for all three subtasks will be released promptly and announced in the Googl
 
 Data is available in [`data`](https://github.com/sigmorphon/2022G2PST/tree/main/data). 
 * `target_to_transfer_languages.json`: map a target language to its corresponding transfer language
-* `target_languages`: Target language data
-* `transfer_languages`: Transfer language data
+* `target_languages`: Target language data. This folder contains the train, dev, and (covered) test splits. It also
+contains the "low" data setting subtask named with format `<lang>_100_train.tsv`. The "high" data setting is the train 
+file with all language examples, `<lang>_train.tsv`. The dev and test splits remain the same for all subtasks.
+* `transfer_languages`: Transfer language data. Filenames include the language code for target and transfer. The files 
+for the "mixed" subtask are named in `<transfer lang>_<lang>_*_.tsv.mixed` format. These contain all of the transfer language
+examples and the 100 target language examples from the "low" data subtask.
 * `morphological`: Morphological information
 
 
@@ -99,6 +103,45 @@ training and development data.** If you use an internal representation other
 than NFC, you must convert back before submitting.
 
 Please use <a href="mailto:sigmorphon+sharedtask2022@gmail.com?&bcc=arya@jhu.edu&subject=SIGMORPHON 2022 Task 1 Submission&body=Team members (...):%0D%0ATeam name (no spaces):%0D%0APlease attach your submission(s). Each submission should be a .tar.gz or .zip file.">this email form</a> to submit your results.
+
+## Baseline
+
+The baseline is the same model as last year (2021), an ensembled neural transition system based on the
+imitation learning paradigm introduced by Makarov & Clematide (2020). The baseline is referred to as "CLUZH."
+
+Scores for the different subtasks (mixed, low, and high data settings) are below. 
+Please see [`baseline`](baseline) for example code and more details about the model.
+A "-" indicates that the model was unable to learn (improve loss) during training.
+
+| Subtask | Language      | Dev   | Test  |
+|---------|---------------|-------|-------|
+| High    | ben           | 50.68 | 67.12 |
+|         | ger           | 41.00 | 42.00 |
+|         | ita           | 15.00 | 15.00 |
+|         | per           | 58.93 | 59.65 |
+|         | swe           | 52.00 | 45.00 |
+|         | tgl           | 17.00 | 20.00 |
+|         | tha           | 16.00 | 21.00 |
+|         | ukr           | 25.00 | 32.00 |
+|         | Macro-average | 34.45 | 37.72 |
+| Mixed   | ben           | 84.93 | 91.78 |
+|         | ger           | 96.00 | 97.00 |
+|         | ita           | 37.00 | 44.00 |
+|         | per           | -     | -     |
+|         | swe           | 76.00 | 80.00 |
+|         | tgl           | 32.00 | 30.00 |
+|         | tha           | -     | -     |
+|         | ukr           | 87.00 | 96.00 |
+|         | Macro-average | 51.37 | 54.60 |
+| Low | ben           | -     | -     |
+|     | ger           | -     | -     |
+|     | ita           | 52.00 | 51.00 |
+|     | per           | -     | -     |
+|     | swe           | 71.00 | 79.00 |
+|     | tgl           | 36.00 | 29.00 |
+|     | tha           | -     | -     |
+|     | ukr           | -     | -     |
+|     | Macro-average | 19.25 | 19.25 |
 
 
 ## Comparison with the 2021 shared task
