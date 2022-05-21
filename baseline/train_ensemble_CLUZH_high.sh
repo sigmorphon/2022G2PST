@@ -14,7 +14,7 @@
 #$ -pe smp 10
 #$ -t 1
 
-LANGS=( "ben" "ger" "ita" "per" "swe" "tgl" "tha" "ukr" )
+LANGS=( "ben" "ger" "ita" "per" "swe" "tgl" "tha" "ukr" "gle" "bur" )
 LANG=${LANGS[(( SGE_TASK_ID - 1))]}
 SETTING="high"
 

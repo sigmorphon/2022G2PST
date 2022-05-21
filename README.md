@@ -53,6 +53,17 @@ for the "mixed" subtask are named in `<transfer lang>_<lang>_*_.tsv.mixed` forma
 examples and the 100 target language examples from the "low" data subtask.
 * `morphological`: Morphological information
 
+**Update May 21:**
+
+Surprise languages are available! (Uploaded on May 18)
+* Irish -> Welsh
+* Burmese -> Shan
+
+Clarifications:
+
+* The "low" `<lang>_100_train.tsv` files: The `<lang>_100_train.tsv` files are *for your convenience* and are the first 100 lines of the `<lang>_train.tsv` file. You are **not required** to use these 100 lines, but these are for reproducibility of the baseline.
+* In the original release, the transfer language files were said to be named in `<transfer lang>_<lang>_*_.tsv` format, but this was not the case. Apologies. For clarity, these files have been renamed to `<transfer lang>_<lang>.tsv`. The other information (e.g., "broad") was leftover from data processing and is unnecessary information for this task. 
+* The `<transfer lang>_<lang>.tsv.mixed` files are the unshuffled concatenation of `<lang>_100_train.tsv` and `<transfer lang>_<lang>.tsv`. You **do not** have to use this pre-mixed file for your model. This is included for reproducibility of the baseline.
 
 ### Subtasks
 
@@ -70,15 +81,15 @@ If you wish to use any external data, please discuss with the organizers beforeh
 
 This year, we will use 10 language pairs, including two surprise languages.
 
-1.  Swedish → Norwegian Nynorsk
-2.  German → Dutch
-3.  Italian → Romanian
-4.  Ukrainian → Belarusian
-5.  SURPRISE → SURPRISE
-6.  Tagalog → Cebuano
-7.  Bengali → Assamese
-8.  SURPRISE → SURPRISE
-9.  Persian → Pashto
+1. Swedish → Norwegian Nynorsk
+2. German → Dutch
+3. Italian → Romanian
+4. Ukrainian → Belarusian
+5. SURPRISE → SURPRISE
+6. Tagalog → Cebuano
+7. Bengali → Assamese
+8. SURPRISE → SURPRISE
+9. Persian → Pashto
 10. Thai → Eastern Lawa
 
 

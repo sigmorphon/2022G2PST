@@ -14,17 +14,8 @@
 #$ -pe smp 10
 #$ -t 1
 
-LANGS=( "ben" "ger" "ita" "per" "swe" "tgl" "tha" "ukr" )
-TRANSFER_LANGS=(
-  "asm_beng_broad.tsv.mixed"
-  "dut_latn_broad_filtered.tsv.mixed"
-  "rum_latn_broad.tsv.mixed"
-  "pus_arab_broad.tsv.mixed"
-  "nno_latn_broad.tsv.mixed"
-  "ceb_latn_broad.tsv.mixed"
-  "lwl_thai_broad.tsv.mixed"
-  "bel_cyrl_narrow.tsv.mixed"
-)
+LANGS=( "ben" "ger" "ita" "per" "swe" "tgl" "tha" "ukr" "gle" "bur" )
+TRANSFER_LANGS=( "asm" "dut" "rum" "pus" "nno" "ceb" "lwl" "bel" "wel" "shn" )
 LANG=${LANGS[(( SGE_TASK_ID - 1))]}
 TRANSFER_LANG=${TRANSFER_LANGS[(( SGE_TASK_ID - 1))]}
 SETTING="mixed"
@@ -55,7 +46,7 @@ for ENSEMBLE_SIZE in $(seq 1 "${MAX_ENSEMBLE_SIZE}"); do
   python "${CODE_DIR}/baseline/trans/train.py" \
     --dynet-seed "${ENSEMBLE_SIZE}" \
     --output "${OUTPUT}" \
-    --train "${DATA_TRANSFER}/${TRANSFER_LANG}" \
+    --train "${DATA_TRANSFER}/${TRANSFER_LANG}_${LANG}.tsv.mixed" \
     --dev "${DATA_TARGET}/${LANG}_dev.tsv" \
     --test "${DATA_TARGET}/${LANG}_test.tsv" \
     --sed-em-iterations "${SED_EM_ITERATIONS}" \
