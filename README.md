@@ -53,7 +53,7 @@ for the "mixed" subtask are named in `<transfer lang>_<lang>_*_.tsv.mixed` forma
 examples and the 100 target language examples from the "low" data subtask.
 * `morphological`: Morphological information
 
-**Update May 21:**
+**Update May 23:**
 
 Surprise languages are available! (Uploaded on May 18)
 * Irish -> Welsh
@@ -127,32 +127,38 @@ A "-" indicates that the model was unable to learn (improve loss) during trainin
 | Subtask | Language      | Dev   | Test  |
 |---------|---------------|-------|-------|
 | High    | ben           | 50.68 | 67.12 |
+|         | bur           | 22.00 | 29.00 |
 |         | ger           | 41.00 | 42.00 |
+|         | gle           | 33.00 | 38.00 |
 |         | ita           | 15.00 | 15.00 |
 |         | per           | 58.93 | 59.65 |
 |         | swe           | 52.00 | 45.00 |
 |         | tgl           | 17.00 | 20.00 |
 |         | tha           | 16.00 | 21.00 |
 |         | ukr           | 25.00 | 32.00 |
-|         | Macro-average | 34.45 | 37.72 |
+|         | Macro-average | 33.06 | 36.88 |
 | Mixed   | ben           | 84.93 | 91.78 |
+|         | bur           | -     | -     |
 |         | ger           | 96.00 | 97.00 |
+|         | gle           | -     | -     |
 |         | ita           | 37.00 | 44.00 |
 |         | per           | -     | -     |
 |         | swe           | 76.00 | 80.00 |
 |         | tgl           | 32.00 | 30.00 |
 |         | tha           | -     | -     |
 |         | ukr           | 87.00 | 96.00 |
-|         | Macro-average | 51.37 | 54.60 |
-| Low | ben           | -     | -     |
-|     | ger           | -     | -     |
-|     | ita           | 52.00 | 51.00 |
-|     | per           | -     | -     |
-|     | swe           | 71.00 | 79.00 |
-|     | tgl           | 36.00 | 29.00 |
-|     | tha           | -     | -     |
-|     | ukr           | -     | -     |
-|     | Macro-average | 19.25 | 19.25 |
+|         | Macro-average | 40.89 | 43.48 |
+| Low     | ben           | -     | -     |
+|         | bur           | -     | -     |
+|         | ger           | -     | -     |
+|         | gle           | -     | -     |
+|         | ita           | 52.00 | 51.00 |
+|         | per           | -     | -     |
+|         | swe           | 71.00 | 79.00 |
+|         | tgl           | 36.00 | 29.00 |
+|         | tha           | -     | -     |
+|         | ukr           | -     | -     |
+|         | Macro-average | 15.20 | 15.20 |
 
 
 ## Comparison with the 2021 shared task

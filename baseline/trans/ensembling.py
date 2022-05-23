@@ -19,16 +19,18 @@ def read_files(fileobj: TextIO):
 
 
 def main(args: argparse.Namespace):
-
     os.path.exists(args.output) or os.makedirs(args.output)
-
     logging.info(
         "Producing a majority-vote prediction file from %d system files.",
         len(args.systems),
     )
 
-    with open(args.gold, encoding="utf8") as f:
-        gold = read_files(f)
+    try:
+        with open(args.gold, encoding="utf8") as f:
+            gold = read_files(f)
+    except ValueError as err:
+        logging.error(f"Error reading gold file {args.gold}: {err}")
+        exit(1)
 
     systems = []
     for system in args.systems:
